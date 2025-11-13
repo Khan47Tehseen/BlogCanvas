@@ -99,7 +99,7 @@
     margin-top: 16px !important;
   }
   div:has(> input[name="tags"]) {
-    margin-top: 40px !important;
+    margin-top: 60px !important;
   }
   
   .ql-container {
