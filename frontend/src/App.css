@@ -24,6 +24,57 @@
     padding: 10px 16px !important;
     font-size: 14px !important;
   }
+
+  /* Reverse button order for logged-out state */
+  header > div > div > div:last-child > div {
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    gap: 8px !important;
+    width: 100% !important;
+  }
+  
+  /* Make logged-out buttons full width */
+  header > div > div > div:last-child > div button {
+    width: 100% !important;
+    text-align: center !important;
+  }
+
+  /* Shift all buttons to left */
+  header > div > div > div:last-child {
+    justify-content: flex-start !important;
+    padding-left: 0 !important;
+  }
+  
+  /* Add left margin to first button group */
+  header > div > div > div:last-child > div:first-child {
+    margin-left: 0 !important;
+  }
+
+  /* Fix Quill Editor and Tags Overlap */
+  /* Add space between tags input and editor */
+  div:has(> .ql-container) {
+    margin-top: 20px !important;
+  }
+  
+  /* Ensure tags input has proper spacing */
+  input[name="tags"] {
+    margin-bottom: 24px !important;
+  }
+  
+  /* Reduce editor height on mobile to prevent overlap */
+  .ql-container {
+    min-height: 250px !important;
+  }
+  
+  .ql-editor {
+    min-height: 200px !important;
+    padding-bottom: 30px !important;
+  }
+}
+
+/* Additional spacing for CreatePost form */
+form > div {
+  margin-bottom: 24px !important;
 }
 
 /* Quill Editor Fix */
