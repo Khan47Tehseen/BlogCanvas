@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+const API_URL = 'https://blogcanvas-6p7v.onrender.com';
 
 // Create axios instance
 const api = axios.create({
