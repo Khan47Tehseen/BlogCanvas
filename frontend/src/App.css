@@ -98,9 +98,11 @@
   div:has(> .ql-container) {
     margin-top: 16px !important;
   }
-  
-  input[name="tags"] {
+  div:has(> input[name="tags"]) > label {
     margin-top: 30px !important;
+  }
+  input[name="tags"] {
+    margin-top: 40px !important;
   }
   
   .ql-container {
