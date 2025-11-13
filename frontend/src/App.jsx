@@ -7,6 +7,8 @@ import CreatePost from './components/CreatePost';
 import EditPost from './components/EditPost';
 import PostDetail from './components/PostDetail';
 
+import './App.css';
+
 function App() {
   const [currentView, setCurrentView] = useState('landing'); // 'landing', 'login', 'register', 'blogList', 'createPost', 'editPost', 'postDetail'
   const [editingPost, setEditingPost] = useState(null);
